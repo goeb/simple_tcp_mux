@@ -22,13 +22,16 @@
 #include "subprocess.h"
 
 const char *usage_string = \
-        "Usage: simple_tcp_mux [-v] <local-port> command ...\n"
+        "Usage: simux [-v] PORT COMMAND [ARGS ...]\n"
         "\n"
-        "Options:\n"
-        "  -v     be verbose\n"
+        "Arguments:\n"
+        "  -v         Be verbose\n"
+        "  PORT       Local listening TCP port\n"
+        "  COMMAND    Command to launch for connecting to the server\n"
+        "  ARGS       Arguments passed to COMMAND\n"
         "\n"
         "Example:\n"
-        "  simple_tcp_mux 8888 openssl s_client -quiet -connect example.com:443\n"
+        "  simux 8888 openssl s_client -quiet -connect example.com:443\n"
         ;
 
 void usage()

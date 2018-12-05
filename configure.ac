@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([simple_tcp_mux], [1.0.0], [], [simple_tcp_mux], [http://github.com/goeb/simple_tcp_mux])
+AC_INIT([Simple TCP Multiplexer], [1.0.0], [], [simux], [http://github.com/goeb/simux])
 AC_CONFIG_HEADERS([src/config.h])
 AC_CANONICAL_TARGET
 AM_INIT_AUTOMAKE([-Wall -Werror subdir-objects])
